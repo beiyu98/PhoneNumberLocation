@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.project.android.bruce.phonenumberlocation.MainActivity">
+
+    <TextView
+        android:textSize="32sp"
+        android:textColor="#e7101e"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="手机号码归属地查询"
+        android:id="@+id/title_tv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textSize="16sp"
+            android:hint="请输入需要查询的电话号码"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_et"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:id="@+id/search_btn"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#ff0900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_number"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#ffaa00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_prefix"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#00aeff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_supplier"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#0040ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_province"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#b700ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_city"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:textColor="#ff008c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_suit"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
